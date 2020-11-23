@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #7c3aed;
+  --off-white: #f3f4f6;
+  --dark-gray: #6b7280;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+hr {
+  margin: 2rem 0rem;
+}
+
+/** container **/
+.body-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: auto;
+}
+
+.container {
+  padding: 0rem 1rem;
+}
+
+/** navigation **/
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  background-color: black;
+  color: white;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-right: auto;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-item {
+  display: flex;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu .active {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.hero .hero-image {
+  max-height: 160px;
+  max-width: 160px;
+  border-radius: 100%;
+  margin: 1rem 0;
+}
+
+.hero .hero-title {
+  color: white;
+  opacity: 0.9;
+  text-align: center;
+  max-width: 400px;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.hero .hero-heading {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0rem 0;
+  max-width: 500px;
+}
+
+.hero .hero-subheading {
+  color: #a5a5a5;
+  text-align: center;
+  max-width: 400px;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero .hero-subheading .hero-subheading-highlight{
+  color: white;
+  opacity: 0.9;
+  font-weight: normal;
+}
+
+.hero .hero-social-link-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+.hero-social-link-bar .social-link-item{
+  display: flex;
+  flex-direction: row;
+  height: 1.3rem;
+  width: 1.3rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
+  transition: 0.25s ease;
+  color: white;
+}
+
+.social-link-item:hover {
+  opacity: 1;
+}
+
+.link-primary{
+  background-color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+}
