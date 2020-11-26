@@ -180,6 +180,7 @@ hr {
 .section-title {
   font-weight: bold;
   font-size: 2rem;
+  color: var(--coolGray200);
 }
 
 .section-text{
@@ -198,10 +199,15 @@ hr {
   max-width: 50%;
   width: 50%;
   flex: 1;
-  background-image: url(./images/hetav_dev.png);
-  background-position: center center;
-  background-size: cover;
   margin: 1rem 0;
+}
+
+.about_image{
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 1rem 0;
+  object-fit: cover;
 }
 
 .about_content {
@@ -214,7 +220,7 @@ hr {
 @media (max-width: 768px){
   .about {
     flex-direction: column;
-    height: 100vh;
+    
   }
 
   .about_image_container{
@@ -222,6 +228,12 @@ hr {
     max-width: 90vw;
     background-size: cover;
     margin: 0;
+  }
+
+  .about_image{
+    width: auto;
+    height: auto;
+    margin: 0 2rem 0 auto;
   }
 
   .about_content{
