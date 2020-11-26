@@ -1,16 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
-  --primary-color: #7c3aed;
   --off-white: #f3f4f6;
   --dark-gray: #6b7280;
+  --coolGray50: #F9FAFB;
+  --coolGray100: #F3F4F6;
+  --coolGray200: #E5E7EB;
+  --coolGray300: #D1D5DB;
+  --coolGray400: #9CA3AF;
+  --coolGray500: #6B7280;
+  --coolGray600: #4B5563;
+  --coolGray700: #374151;
+  --coolGray800: #1F2937;
+  --coolGray900: #111827;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
-  background-color: black;
+  background-color: var(--coolGray900);
   scroll-behavior: smooth;
+  color: var(--coolGray50);
 }
 
 hr {
@@ -26,7 +36,7 @@ hr {
 }
 
 .container {
-  padding: 0rem 1rem;
+  padding: 2.5rem 2rem;
 }
 
 /** navigation **/
@@ -37,8 +47,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 2rem;
-  background-color: black;
-  color: white;
+  color: var(--coolGray50);
 }
 
 .nav-logo {
@@ -57,7 +66,7 @@ hr {
   display: flex;
   margin-left: 2rem;
   text-decoration: none;
-  color: white;
+  color: var(--coolGray50);
 }
 
 .nav-menu .active {
@@ -72,7 +81,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 5rem 2rem;
 }
 
 .hero .hero-image {
@@ -83,8 +92,7 @@ hr {
 }
 
 .hero .hero-title {
-  color: white;
-  opacity: 0.9;
+  color: var(--coolGray300);
   text-align: center;
   max-width: 400px;
   line-height: 1.5rem;
@@ -94,7 +102,7 @@ hr {
 }
 
 .hero .hero-heading {
-  color: white;
+  color: var(--coolGray50);
   text-align: center;
   font-size: 2rem;
   margin: 0rem 0;
@@ -102,7 +110,7 @@ hr {
 }
 
 .hero .hero-subheading {
-  color: #a5a5a5;
+  color: var(--coolGray400);
   text-align: center;
   max-width: 400px;
   line-height: 1.5rem;
@@ -111,8 +119,7 @@ hr {
 }
 
 .hero .hero-subheading .hero-subheading-highlight{
-  color: white;
-  opacity: 0.9;
+  color: var(--coolGray50);
   font-weight: normal;
 }
 
@@ -133,7 +140,7 @@ hr {
   filter: brightness(0) invert(1);
   opacity: 0.5;
   transition: 0.25s ease;
-  color: white;
+  color: var(--coolGray50);
 }
 
 .social-link-item:hover {
@@ -141,11 +148,27 @@ hr {
 }
 
 .link-primary{
-  background-color: white;
+  background-color: var(--coolGray50);
   font-weight: bold;
   text-transform: uppercase;
   border: none;
   border-radius: 2rem;
   padding: 1rem 2rem;
   margin: 1rem 0;
+}
+
+.list-non-bullet{
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.section-text{
+  line-height: 1.5rem;
+  color: #ffffffaa;
+  
 }
