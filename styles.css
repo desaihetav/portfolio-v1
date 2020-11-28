@@ -152,6 +152,14 @@ section{
   margin: 1rem 0;
 }
 
+a{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.social-link-a{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
 .social-link-bar .social-link-item{
   display: flex;
   flex-direction: row;
@@ -319,6 +327,51 @@ section{
   margin-bottom: 1rem;
 }
 
+/* blog-page */
+
+.blog-content{
+  max-width: 720px;
+  margin: 5rem auto;
+}
+
+.blog-heading{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.blog-image{
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.blog-subheading{
+  font-size: 2rem;
+  color: var(--coolGray200);
+}
+
+.blog-text{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--coolGray300);
+}
+
+.blog-meta{
+  font-size: 1rem;
+  /* line-height: 2rem; */
+  color: var(--coolGray300);
+  text-align: center;
+}
+
+.blog-list{
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: var(--coolGray300);
+}
+
+.blog-content ol{
+  padding-left: 1rem;
+}
+
 .footer-container{
   background-color: var(--coolGray800);
   padding: 0 2rem;
@@ -374,7 +427,12 @@ section{
   display: grid;
   grid-template-columns: auto auto;
   overflow: hidden;
-  margin: 2rem 0;
+  padding: 2rem 1rem;
+}
+
+.blog-container a{
+  text-decoration: none;
+  max-width: 50%;
 }
 
 .blog-item {
@@ -385,7 +443,14 @@ section{
   margin: 1rem;
   font-size: 30px;
   border-radius: 1rem;
-  max-width: 50%;
+  max-width: 100%;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+
+.blog-item:hover{
+  transform: scale(1.02);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
 }
 
 .blog-item-content{
@@ -417,6 +482,10 @@ section{
 }
 
 @media (max-width: 768px){
+
+  .body-container{
+    padding: 0 1.5rem;
+  }
 
   section{
     padding: 0 2rem;
@@ -468,12 +537,28 @@ section{
     display: grid;
     grid-template-columns: auto;
     overflow: hidden;
-    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+
+  .blog-container a{
+    text-decoration: none;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+
+  .blog-container:focus-visible{
+    outline: none;
+  }
+
+  .blog-item:hover{
+    transform: scale(0.95);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
   }
 
   .blog-item {
     margin: 2rem 0;
-    max-width: 100%;
   }
 
   .blog-item-content{
@@ -482,6 +567,14 @@ section{
 
   .blog-item-image {
     height: 50vw;
+  }
+
+  .blog-heading{
+    font-size: 2rem;
+  }
+
+  .blog-subheading{
+    font-size: 1.5rem;
   }
 
   .footer{
