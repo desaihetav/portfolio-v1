@@ -167,6 +167,7 @@ section{
 }
 
 .link-primary{
+  display: inline-block;
   background-color: var(--coolGray100);
   border: none;
   color: var(--coolGray900);
@@ -175,7 +176,7 @@ section{
   border-radius: 2rem;
   padding: 1rem 2rem;
   margin: 1rem auto;
-  min-width: 10rem;
+  min-width: 12rem;
   transition: background-color 0.25s ease-in;
   cursor: pointer;
   text-align: center;
@@ -226,29 +227,29 @@ section{
   
 }
 
-.about {
+.feature {
   display: flex;
   flex-direction: row;
   padding: 5rem 0;
 }
 
-.about_image_container{
+.feature_image_container{
   max-width: 50%;
   width: 50%;
   flex: 1;
   margin: 1rem 0;
 }
 
-.about_image{
+.feature_image{
   max-width: 100%;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   max-height: 80vh;
   margin: 1rem 0;
   object-fit: cover;
 }
 
-.about_content {
+.feature_content {
   flex: 1;
   padding-left: 5%;
   justify-content: center;
@@ -257,34 +258,36 @@ section{
 
 /* blog */
 
-.blog {
+.feature-rev {
   display: flex;
   flex-direction: row-reverse;
   padding: 5rem 0;
 }
 
-.blog_image_container{
+.feature_rev_image_container{
   max-width: 50%;
   width: 50%;
   flex: 1;
   margin: 1rem 0;
 }
 
-.blog_image{
+.feature_rev_image{
   max-width: 100%;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   max-height: 80vh;
   margin: 1rem 0;
   object-fit: cover;
 }
 
-.blog_content {
+.feature_rev_content {
   flex: 1;
   padding-right: 5%;
   justify-content: center;
   margin: auto;
 }
+
+/* contact */
 
 .contact-container{
   background-color: var(--coolGray900);
@@ -299,11 +302,11 @@ section{
   /* min-height: 70vh; */
 }
 
-.contact-heading {
+.heading {
   color: var(--coolGray50);
   text-align: center;
-  font-size: 2rem;
-  margin: 1rem 0;
+  font-size: 3rem;
+  margin: 1rem auto;
   max-width: 500px;
 }
 
@@ -318,6 +321,7 @@ section{
 
 .footer-container{
   background-color: var(--coolGray800);
+  padding: 0 2rem;
 }
 
 .footer{
@@ -369,18 +373,18 @@ section{
     padding: 0 2rem;
   }
 
-  .about, .blog {
+  .feature, .feature-rev {
     flex-direction: column;
   }
 
-  .about_image_container{
+  .feature_image_container{
     width: auto;
     max-width: 90vw;
     background-size: cover;
     margin: 0;
   }
 
-  .about_image{
+  .feature_image{
     width: calc(100vw-2rem);
     max-width: 90vw;
     height: 67vw;
@@ -388,18 +392,18 @@ section{
     margin: 0 auto;
   }
 
-  .about_content{
+  .feature_content{
     padding: 0;
   }
 
-  .blog_image_container{
+  .feature_rev_image_container{
     width: auto;
     max-width: 90vw;
     background-size: cover;
     margin: 0;
   }
 
-  .blog_image{
+  .feature_rev_image{
     width: calc(100vw-2rem);
     max-width: 90vw;
     height: 67vw;
@@ -407,7 +411,7 @@ section{
     margin: 0 auto;
   }
 
-  .blog_content{
+  .feature_rev_content{
     padding: 0;
   }
 
