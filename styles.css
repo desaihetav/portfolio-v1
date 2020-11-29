@@ -25,6 +25,7 @@ body {
   background-color: var(--coolGray900);
   color: var(--coolGray50);
   user-select: none;
+  overscroll-behavior: none;
 }
 
 /** container **/
