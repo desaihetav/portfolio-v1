@@ -182,7 +182,6 @@ a{
   color: var(--coolGray900);
   font-weight: 800;
   text-transform: uppercase;
-  border-radius: 2rem;
   padding: 1rem 2rem;
   margin: 1rem auto;
   min-width: 12rem;
@@ -204,7 +203,6 @@ a{
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
-  border-radius: 2rem;
   padding: 1rem 2rem;
   margin: 1rem auto;
   min-width: 12rem;
@@ -443,7 +441,6 @@ a{
   background-color: var(--coolGray800);
   margin: 1rem;
   font-size: 30px;
-  border-radius: 1rem;
   max-width: 100%;
   text-decoration: none;
   transition: 0.2s ease-in;
