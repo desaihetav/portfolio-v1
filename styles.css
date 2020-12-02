@@ -438,7 +438,7 @@ a{
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: var(--coolGray800);
+  border-radius: 1rem;
   margin: 1rem;
   font-size: 30px;
   max-width: 100%;
@@ -448,17 +448,19 @@ a{
 
 .blog-item:hover{
   transform: scale(1.02);
+  background-color: var(--coolGray800);
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
 }
 
 .blog-item-content{
-  padding: 2rem;
+  padding: 1.5rem;
   overflow: hidden;
 }
 
 .blog-item-image{
   height: 250px;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 .blog-item-title{
@@ -557,6 +559,7 @@ a{
 
   .blog-item {
     margin: 2rem 0;
+    background-color: var(--coolGray800);
   }
 
   .blog-item-content{
