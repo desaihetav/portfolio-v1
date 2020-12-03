@@ -184,7 +184,7 @@ a{
   text-transform: uppercase;
   padding: 1rem 2rem;
   margin: 1rem auto;
-  min-width: 12rem;
+  min-width: 10rem;
   transition: background-color 0.25s ease-in;
   cursor: pointer;
   text-align: center;
@@ -205,7 +205,7 @@ a{
   text-transform: uppercase;
   padding: 1rem 2rem;
   margin: 1rem auto;
-  min-width: 12rem;
+  min-width: 10rem;
   transition: color, background-color 0.25s ease-in;
   cursor: pointer;
   text-align: center;
